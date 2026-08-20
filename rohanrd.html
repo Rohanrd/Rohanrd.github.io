@@ -1,156 +1,317 @@
-<!DOCTYPE html>
-<html lang="en">
+```html
+<div class="container">
 
-<head>
-  <!-- Metadata for the Webpage -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rohan Raju Dhanakshirur, PhD</title>
+  <!-- Header / Profile -->
+  <div class="row">
+    <div class="col-sm-4 text-center">
+      <img class="center-block img img-responsive img-circle"
+           src="img/rohan.jpg"
+           alt="Dr. Rohan Raju Dhanakshirur">
 
-  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
-  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+      <h2 style="margin-top:20px;">
+        Dr. Rohan Raju Dhanakshirur
+      </h2>
 
-  <!-- Bootstrap CSS files-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <p id="title">
+        <strong>Senior AI Scientist</strong><br>
+        <span id="program">
+          GE HealthCare<br>
+          Bengaluru, India
+        </span>
+      </p>
 
-  <!-- jQuery UI CSS (optional) -->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+      <p>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener">
+          <i class="fas fa-graduation-cap"></i> Google Scholar
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </p>
 
-  <!-- Google web fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600" rel="stylesheet">
+      <table class="table" id="contact-table">
+        <tbody>
 
-  <!-- Font Awesome Web Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+          <tr>
+            <td style="width:30px">
+              <i class="fas fa-briefcase"></i>
+            </td>
+            <td>
+              Senior AI Scientist<br>
+              GE HealthCare<br>
+              Bengaluru, India
+            </td>
+          </tr>
 
-  <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+          <tr>
+            <td>
+              <i class="fas fa-envelope"></i>
+            </td>
+            <td>
+              <a href="mailto:rohanrd@gmail.com">
+                Email
+              </a>
+            </td>
+          </tr>
 
-  <!-- Local styles -->
-  <link rel="stylesheet" href="css/main.css">
+          <tr>
+            <td>
+              <i class="fas fa-graduation-cap"></i>
+            </td>
+            <td>
+              <a href="#" target="_blank" rel="noopener">
+                Google Scholar
+              </a>
+            </td>
+          </tr>
 
-</head>
+          <tr>
+            <td>
+              <i class="fab fa-linkedin"></i>
+            </td>
+            <td>
+              <a href="#" target="_blank" rel="noopener">
+                LinkedIn
+              </a>
+            </td>
+          </tr>
 
-<body>
+        </tbody>
+      </table>
 
-  <!-- navbar include -->
-  <div id="navbar-include"></div>
-
-  <div class="spacer-div-3 hidden-xs hidden-xs"></div>
-
-  <!-- Main content    -->
-  <div id="main-container" class="container">
-
-
-
-
-
-    <div class="row">
-      <div class="col-sm-4">
-        <img class="center-block img img-responsive" src="img/rohan.jpg" alt="Image of Rohan Dhanakshirur">
-
-        <p id="title">PhD Student<br>
-          <span id="program">Amarnath and Shashi Khosla School of IT</span>
-        </p>
-
-        <table class="table" id="contact-table">
-          <tbody>
-            <tr>
-              <td style="width:30px"><i class="fas fa-home"></i></td>
-              <td>
-                IIT Delhi<br>
-                New Delhi, India-110016.<br>
-              </td>
-            </tr>
-            <tr>
-              <td><i class="fas fa-phone"></i></td>
-              <td><a href="tel:011 2569 6025">(011) 2569 6025</a></td>
-            </tr>
-            <tr>
-              <td><i class="fas fa-at"></i></td>
-              <td><a href="rohanrd@sit.iitd.ac.in">rohanrd@sit.iitd.ac.in</a></td>
-            </tr>
-          </tbody>
-        </table>
-
-      </div>
-      <div class="col-sm-8">
-
-        <p align="justify">I am a <b>Senior Project Scientist and a PhD student</b> in the <a href="https://sit.iitd.ac.in/students">Amarnath and Shashi Khosla School of Information Technology at the Indian Institute of Technology Delhi</a> where I work on automatic evaluation of the microscopic and endoscopic neurosurgical skills. I am pursuing my Phd Under the supervision of Prof. Chetan Arora and Prof. Prem Kumar Kalra.</p>
-
-        <p align = "justify">I received my Bachelors of Engineering in Electronics and Communications from <a href="https://www.kletech.ac.in/hubballi/">B. V. Bhoomaraddi College of Engineering and Technology, Hubballi </a> (Autonomous college under the Visveswaraya Technological University) in 2018 with a <b>gold medal</b>. I worked on "motion deblurring" as a part of my Research Experience for Undergraduates (REU) course, and on "classification of crowd sourced images" as a part of capstone project under the supervision of Prof. Uma Mudenagudi.</p>
-
-        <p align='justify'>I, along with my team members have worked on the neurosurgical microsuturing, microdrilling and endoscopic skills evaluation evaluation system, which was recognized by the All India-AIIMS research symposium of 2022, IIT Research Day of 2022 etc... It received the first <a href="https://www.iifaindia.org/award_modi_prix.html#:~:text=FIRST%20MODI%20PRIX%20GALIEN%20INDIA,the%20state%20of%20human%20health.">Modi Prix Galien India Award for the Best Academic/Public Sector Innovation</a>  under the name <b>"NeuroMentor"</b>. The same is presently being used in the Neurosurgery Training and Simulation Lab of AIIMS, New Delhi. With 13+ publications in top venues such as MICCAI, ICIP, NSC, etc., I have 6 years of experience in the computer vision for the medical community</p>
-
-
-        <h3 class="push-down-3"><span>Education</span></h3>
-
-        <ul id="education">
-          <li>
-            <strong>Ph.D. (Ongoing)</strong><br>
-            <span class="university"><em>Indain Institute of Technology Delhi</em></span>
-          </li>
-          <li>
-            <strong>B E. in Electronics and Computer Science Engineering, 2018</strong><br>
-            <span class="university"><em>B. V. Bhoomaraddi College of Engineering and Technology, Hubballi</em></span>
-            <span class="university"><em><br>9.84 CGPA, GOLD MEDALIST</em></span>
-          </li>
-
-        </ul>
-
-      </div>
     </div>
 
+
+    <!-- About -->
+    <div class="col-sm-8">
+
+      <h2 class="push-down-3">
+        <span>About Me</span>
+      </h2>
+
+      <p align="justify">
+        I am a <b>Senior AI Scientist at GE HealthCare</b>, working at the
+        intersection of artificial intelligence, computer vision, and
+        healthcare. I received my <b>Ph.D. from the Amarnath and Shashi
+        Khosla School of Information Technology at IIT Delhi</b>, where
+        I worked under the supervision of
+        <b>Prof. Chetan Arora</b> and
+        <b>Prof. Prem Kumar Kalra</b>.
+      </p>
+
+      <p align="justify">
+        My doctoral research focused on
+        <b>automatic evaluation of microscopic and endoscopic
+        minimally invasive neurosurgical skills</b>. My work combines
+        computer vision, deep learning, video understanding, and
+        medical AI to develop systems for surgical skill assessment
+        and intelligent neurosurgical training.
+      </p>
+
+      <p align="justify">
+        During my doctoral research, I developed datasets and AI
+        methodologies for <b>microsuturing, microdrilling,
+        neuroendoscopic skill assessment, temporal action
+        segmentation, and surgical instrument instance
+        segmentation</b>. My research has resulted in
+        <b>25+ publications</b> in international conferences and
+        journals, including venues such as MICCAI, ICIP, WACV and
+        other reputed forums in computer vision and medical AI.
+      </p>
+
+      <p align="justify">
+        I was also the chief inventor of <b>NeuroMentor</b>, an
+        AI-based neurosurgical skills evaluation and training system.
+        The system received the
+        <a href="https://www.iifaindia.org/award_modi_prix.html"
+           target="_blank" rel="noopener">
+          Modi Prix Galien India Award
+        </a>
+        for <b>Best Academic/Public Sector Innovation</b>.
+        NeuroMentor has been used for neurosurgical training and
+        simulation at AIIMS, New Delhi.
+      </p>
+
+
+      <!-- Research Interests -->
+      <h3 class="push-down-3">
+        <span>Research Interests</span>
+      </h3>
+
+      <ul>
+        <li>Medical Image Analysis</li>
+        <li>Computer Vision for Healthcare</li>
+        <li>Video Understanding and Temporal Action Segmentation</li>
+        <li>Surgical Skill Assessment</li>
+        <li>Medical Artificial Intelligence</li>
+        <li>Deep Learning and Multimodal Learning</li>
+        <li>Neurosurgical Navigation and Simulation</li>
+      </ul>
+
+
+      <!-- Education -->
+      <h3 class="push-down-3">
+        <span>Education</span>
+      </h3>
+
+      <ul id="education">
+
+        <li>
+          <strong>Ph.D. in Computer Science and Engineering</strong><br>
+          <span class="university">
+            <em>Indian Institute of Technology Delhi</em>
+          </span>
+          <br>
+          <span>
+            Research: Automatic Evaluation of Microscopic and
+            Endoscopic Minimally Invasive Neurosurgical Skills
+          </span>
+        </li>
+
+        <li>
+          <strong>
+            B.E. in Electronics and Communication Engineering, 2018
+          </strong><br>
+          <span class="university">
+            <em>
+              B. V. Bhoomaraddi College of Engineering and
+              Technology, Hubballi
+            </em>
+          </span>
+          <br>
+          <span class="university">
+            <em>9.84 CGPA • Gold Medalist</em>
+          </span>
+        </li>
+
+      </ul>
+
+
+      <!-- Selected Achievements -->
+      <h3 class="push-down-3">
+        <span>Selected Achievements</span>
+      </h3>
+
+      <ul>
+
+        <li>
+          <strong>Modi Prix Galien India Award 2024</strong><br>
+          Best Academic/Public Sector Innovation for
+          <b>NeuroMentor</b>.
+        </li>
+
+        <li>
+          <strong>Best Paper Award</strong><br>
+          National Systems Conference (NSC), 2021.
+        </li>
+
+        <li>
+          <strong>Best Paper Award</strong><br>
+          National Systems Conference (NSC), 2024.
+        </li>
+
+        <li>
+          <strong>Best Demonstration Award</strong><br>
+          IIT Delhi Open House, 2024.
+        </li>
+
+        <li>
+          <strong>Best Poster Award</strong><br>
+          Emerging Technologies for the Healthcare Workshop,
+          AIIMS New Delhi, 2024.
+        </li>
+
+      </ul>
+
+
+      <!-- Publications -->
+      <h3 class="push-down-3">
+        <span>Publications</span>
+      </h3>
+
+      <p align="justify">
+        I have authored and co-authored <b>25+ research
+        publications</b> spanning computer vision, medical image
+        analysis, surgical video understanding, and AI-based
+        surgical skill assessment.
+      </p>
+
+      <p>
+        <a href="#" target="_blank" rel="noopener">
+          <i class="fas fa-external-link-alt"></i>
+          View complete publication list on Google Scholar
+        </a>
+      </p>
+
+
+      <!-- Selected Research -->
+      <h3 class="push-down-3">
+        <span>Selected Research Contributions</span>
+      </h3>
+
+      <ul>
+
+        <li>
+          <strong>NeuroMentor:</strong>
+          AI-based automatic evaluation of microscopic and
+          endoscopic neurosurgical skills.
+        </li>
+
+        <li>
+          <strong>VideoCutMix:</strong>
+          Temporal augmentation and curriculum learning for
+          surgical video temporal action segmentation in
+          scarce-data scenarios.
+        </li>
+
+        <li>
+          <strong>Neuroendoscopic Skill Assessment:</strong>
+          Development of datasets and deep learning frameworks
+          for automatic evaluation of neuroendoscopic surgical
+          skills.
+        </li>
+
+        <li>
+          <strong>Surgical Instrument Instance Segmentation:</strong>
+          Development of learning-based approaches for robust
+          detection and segmentation of surgical instruments
+          in neurosurgical videos.
+        </li>
+
+      </ul>
+
+
+      <!-- Current Role -->
+      <h3 class="push-down-3">
+        <span>Current Position</span>
+      </h3>
+
+      <p align="justify">
+        <strong>Senior AI Scientist</strong><br>
+        GE HealthCare<br>
+        Bengaluru, India
+      </p>
+
+    </div>
   </div>
 
-  <!-- Back-to-top button -->
-  <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
 
+  <!-- Footer -->
+  <hr>
 
-  <!-- footer include -->
-  <div w3-include-html="footer.html"></div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
 
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <p>
+        <small>
+          © 2026 Rohan Raju Dhanakshirur.
+          All rights reserved.
+        </small>
+      </p>
 
-  <!-- Bootstrap JS Library -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    </div>
+  </div>
 
-  <!-- html file include script | used for navbar and footer -->
-  <script src="js/w3data.js"></script>
-  <script>
-    w3IncludeHTML()
-  </script>
-
-  <!-- Local scripts -->
-  <script src="js/main.js"></script>
-
-  <script>
-    $(document).ready(function() {
-
-      $("#navbar-include").load("navbar.html", function() {
-        console.log("Navbar loaded.");
-      });
-
-    });
-  </script>
-
-</body>
-
-</html>
+</div>
+```
