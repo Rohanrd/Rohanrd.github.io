@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rohan Raju Dhanakshirur</title>
 
-  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
@@ -33,7 +33,8 @@
     crossorigin="anonymous">
 
   <!-- jQuery UI CSS (optional) -->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet"
+    href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
   <!-- Google web fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -45,11 +46,162 @@
     integrity="sha384-50oBUHEmvpT0M1M7uU57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin="anonymous">
 
-  <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
+  <!-- Academicons -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
   <!-- Local styles -->
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- Research page styles -->
+  <style>
+    .research-intro {
+      margin-bottom: 35px;
+    }
+
+    .research-intro p {
+      margin-bottom: 16px;
+    }
+
+    .research-thesis {
+      margin: 28px 0 42px 0;
+      padding: 24px 28px;
+      border-left: 4px solid #777;
+      background: #f7f7f7;
+    }
+
+    .research-thesis p {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .journey {
+      position: relative;
+      margin: 30px 0 45px 0;
+    }
+
+    .journey-item {
+      position: relative;
+      margin-bottom: 34px;
+      padding-left: 34px;
+      border-left: 1px solid #ddd;
+    }
+
+    .journey-item:before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 5px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #777;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 1px #777;
+    }
+
+    .journey-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .journey-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 5px;
+    }
+
+    .journey-item h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .journey-item p {
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+
+    .research-card {
+      border: 1px solid #e5e5e5;
+      padding: 20px 22px;
+      margin-bottom: 22px;
+      background: #fff;
+      height: 100%;
+    }
+
+    .research-card h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .research-card p {
+      margin-bottom: 8px;
+      line-height: 1.65;
+    }
+
+    .research-card .meta {
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .patent-card {
+      border-left: 3px solid #999;
+      padding: 4px 0 4px 18px;
+      margin-bottom: 25px;
+    }
+
+    .patent-card h4 {
+      margin-top: 0;
+      margin-bottom: 7px;
+      font-weight: 600;
+    }
+
+    .patent-card p {
+      margin-bottom: 0;
+      line-height: 1.65;
+    }
+
+    .section-lead {
+      margin-bottom: 22px;
+      line-height: 1.7;
+    }
+
+    .research-highlight {
+      margin-top: 30px;
+      margin-bottom: 42px;
+    }
+
+    .research-highlight h4 {
+      margin-top: 0;
+    }
+
+    .publication-section {
+      margin-top: 10px;
+    }
+
+    .publications li {
+      margin-bottom: 13px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 767px) {
+      .research-thesis {
+        padding: 18px 20px;
+      }
+
+      .research-thesis p {
+        font-size: 16px;
+      }
+
+      .journey-item {
+        padding-left: 25px;
+      }
+    }
+  </style>
 
 </head>
 
@@ -68,308 +220,600 @@
 
         <h1>Research</h1>
 
-        <p align="justify">
-          My research interests lie at the intersection of <b>artificial intelligence,
-          computer vision, and healthcare</b>, with a focus on developing reliable and
-          clinically meaningful AI systems. My work spans both fundamental computer vision
-          research and its application to challenging problems in medical imaging and
-          healthcare.
+        <!-- ========================================================= -->
+        <!-- RESEARCH INTRODUCTION                                    -->
+        <!-- ========================================================= -->
+
+        <div class="research-intro">
+
+          <p align="justify">
+            My research lies at the intersection of <b>artificial intelligence, computer vision,
+            and healthcare</b>. Across my academic and industrial work, I have been interested in
+            a common question: <b>how can we build AI systems that meaningfully understand complex
+            visual information and ultimately become useful, reliable tools in real-world
+            healthcare?</b>
+          </p>
+
+          <p align="justify">
+            My research journey began with broader problems in <b>computer vision and image
+            analysis</b>, spanning image restoration, registration, segmentation, image fusion,
+            video analysis, and deep learning. During my doctoral research at the
+            <b>Indian Institute of Technology Delhi</b>, this foundation evolved into a focused
+            investigation of <b>AI for neurosurgical skill assessment</b>—developing datasets,
+            computer vision methods, and learning frameworks for understanding surgical activity
+            and objectively evaluating technical performance.
+          </p>
+
+          <p align="justify">
+            Today, as a <b>Senior AI Scientist at GE HealthCare</b>, my research has evolved
+            further toward <b>trustworthy and explainable computer vision AI</b>. I work on
+            understanding model behaviour, identifying sources of unreliability, and developing
+            approaches that can make AI systems more dependable and interpretable in healthcare.
+          </p>
+
+        </div>
+
+        <div class="research-thesis">
+          <p align="justify">
+            <b>My broader research trajectory can be viewed as a progression from understanding
+            images, to understanding surgical activity, to understanding human performance,
+            and now toward building AI systems that can be trusted, adapted, and actively assist
+            clinicians.</b>
+          </p>
+        </div>
+
+
+        <!-- ========================================================= -->
+        <!-- RESEARCH JOURNEY                                         -->
+        <!-- ========================================================= -->
+
+        <h3 class="push-down-4"><span>Research Journey</span></h3>
+
+        <p class="section-lead" align="justify">
+          Rather than viewing these as separate research topics, I see my work as a progression
+          across increasingly challenging forms of visual understanding and increasingly
+          consequential healthcare applications.
         </p>
 
-        <p align="justify">
-          During my doctoral research at the <b>Indian Institute of Technology Delhi</b>,
-          I worked on the automated assessment of <b>microscopic and endoscopic
-          neurosurgical skills</b>. This research involved developing datasets, learning
-          frameworks, and computer vision methods for understanding surgical procedures,
-          identifying surgical actions and instruments, and objectively evaluating technical
-          performance.
+        <div class="journey">
+
+          <!-- Stage 1 -->
+          <div class="journey-item">
+
+            <div class="journey-label">Early Research</div>
+
+            <h4>Computer Vision &amp; Medical Imaging</h4>
+
+            <p align="justify">
+              My early research established a foundation in <b>computer vision and image
+              analysis</b>, including image restoration, motion deblurring, image registration,
+              image fusion, image segmentation, video summarization, and feature selection.
+              These projects exposed me to the challenges of extracting meaningful information
+              from imperfect visual data and applying learning-based approaches to real-world
+              problems.
+            </p>
+
+            <p align="justify">
+              This broader computer vision foundation later became the basis for my work on
+              substantially more complex visual problems in healthcare and surgery.
+            </p>
+
+          </div>
+
+
+          <!-- Stage 2 -->
+          <div class="journey-item">
+
+            <div class="journey-label">Doctoral Research · IIT Delhi</div>
+
+            <h4>AI for Surgical Skill Assessment</h4>
+
+            <p align="justify">
+              During my PhD, I focused on the problem of <b>automated and objective assessment
+              of neurosurgical skills</b>. The central idea was to move beyond subjective
+              evaluation by developing AI systems that could understand what happens during
+              surgery and quantify technical performance.
+            </p>
+
+            <p align="justify">
+              This required solving several interconnected computer vision problems:
+              recognizing surgical actions in video, identifying and segmenting surgical
+              instruments, and evaluating the quality of the final surgical outcome. My work
+              therefore brought together <b>datasets, deep learning, temporal video understanding,
+              object and instance segmentation, and skill assessment</b>.
+            </p>
+
+          </div>
+
+
+          <!-- Stage 3 -->
+          <div class="journey-item">
+
+            <div class="journey-label">From Understanding to Assessment</div>
+
+            <h4>Understanding Surgical Activity</h4>
+
+            <p align="justify">
+              One part of this research focused on enabling AI to understand <b>what is happening
+              during a surgical procedure</b>. This included temporal action segmentation of
+              neuroendoscopic videos and instance segmentation of surgical instruments.
+            </p>
+
+            <p align="justify">
+              The work addressed challenges that are particularly important in medical
+              applications, including <b>limited annotated data, fine-grained visual structures,
+              and temporal variability</b>. This led to methods for video augmentation,
+              curriculum learning, and improved query initialization for transformer-based
+              instance segmentation.
+            </p>
+
+          </div>
+
+
+          <!-- Stage 4 -->
+          <div class="journey-item">
+
+            <div class="journey-label">Doctoral Translation</div>
+
+            <h4>From Research to Clinical Translation</h4>
+
+            <p align="justify">
+              The next step was to use these capabilities to answer a more meaningful question:
+              <b>how well is the surgeon actually performing?</b>
+            </p>
+
+            <p align="justify">
+              This resulted in research on automated assessment of <b>microsuturing,
+              microdrilling, and endoscopic neurosurgical skills</b>, supported by purpose-built
+              datasets and AI frameworks. A major translational outcome of this work was
+              <b>NeuroMentor</b>, an AI-based neurosurgical skills evaluation and training
+              system designed to bring objective assessment closer to practical surgical
+              education.
+            </p>
+
+            <p align="justify">
+              This experience shaped an important aspect of my research philosophy: AI research
+              is most valuable when advances in algorithms and computer vision can ultimately
+              translate into tools that address meaningful problems faced by clinicians and
+              trainees.
+            </p>
+
+          </div>
+
+
+          <!-- Stage 5 -->
+          <div class="journey-item">
+
+            <div class="journey-label">Current Research · GE HealthCare</div>
+
+            <h4>From “Can AI Understand?” to “Can We Trust AI?”</h4>
+
+            <p align="justify">
+              My current work builds on this experience but shifts the central question.
+              In healthcare, it is not sufficient for an AI system to make accurate predictions;
+              we also need to understand <b>when and why those predictions can be trusted</b>.
+            </p>
+
+            <p align="justify">
+              As a Senior AI Scientist at <b>GE HealthCare</b>, I therefore focus on
+              <b>reliability, explainability, model behaviour, and failure modes</b> in computer
+              vision AI. A key theme is developing methods that can identify, understand, and
+              mitigate sources of unreliability in AI systems and the data used to train them.
+            </p>
+
+          </div>
+
+
+          <!-- Stage 6 -->
+          <div class="journey-item">
+
+            <div class="journey-label">Emerging Direction</div>
+
+            <h4>Toward Promptable &amp; Assistive Medical AI</h4>
+
+            <p align="justify">
+              My recent work also explores a broader direction: moving from AI systems that
+              simply <b>predict</b> toward systems that can be <b>configured, evaluated, and
+              used interactively</b> by clinicians.
+            </p>
+
+            <p align="justify">
+              Two recent patent filings reflect this direction. One explores prompt-driven
+              creation of specialized medical imaging models, while the other explores
+              AI-guided ultrasound acquisition. Together, they represent an emerging interest
+              in AI systems that can adapt to a clinical requirement and actively assist the
+              user rather than functioning only as passive prediction engines.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- ========================================================= -->
+        <!-- SELECTED RESEARCH WORK                                   -->
+        <!-- ========================================================= -->
+
+        <h3 class="push-down-4"><span>Selected Research</span></h3>
+
+        <p class="section-lead" align="justify">
+          The projects below represent key steps in this research journey—from understanding
+          surgical activity to objectively evaluating surgical performance and, more recently,
+          improving the reliability of medical AI.
         </p>
 
-        <p align="justify">
-          I currently work as a <b>Senior AI Scientist at GE HealthCare</b>, where my
-          research focuses on <b>explainable and trustworthy computer vision AI</b>.
-          My present work is aimed at understanding, evaluating, and improving the reliability
-          of AI systems so that their predictions can be better understood and trusted in
-          real-world healthcare applications.
+
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="research-card">
+
+              <div class="meta">ICIP 2023 · Surgical Skill Assessment</div>
+
+              <h4>
+                <a href="https://aineurosurgery.github.io/microsuturing">
+                  From Feline Classification to Skills Evaluation
+                </a>
+              </h4>
+
+              <p align="justify">
+                A <b>multitask learning framework</b> for evaluating neurosurgical micro-suturing
+                skills from the final surgical outcome, addressing small long-tailed datasets,
+                varying magnification, and suture size.
+              </p>
+
+              <p>
+                <a href="https://aineurosurgery.github.io/microsuturing">[Project]</a>
+              </p>
+
+            </div>
+          </div>
+
+
+          <div class="col-sm-6">
+            <div class="research-card">
+
+              <div class="meta">MICCAI 2024 · Surgical Video Understanding</div>
+
+              <h4>
+                <a href="https://aineurosurgery.github.io/VideoCutMix">
+                  VideoCutMix
+                </a>
+              </h4>
+
+              <p align="justify">
+                A video-specific augmentation and curriculum-learning approach for
+                <b>temporal segmentation of surgical videos</b> in scarce-data settings,
+                accompanied by the Neuro-endoscopic Trainee Simulator (NETS) dataset.
+              </p>
+
+              <p>
+                <a href="https://aineurosurgery.github.io/VideoCutMix">[Project]</a>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="research-card">
+
+              <div class="meta">MICCAI 2023 · Surgical Instrument Segmentation</div>
+
+              <h4>
+                <a href="https://aineurosurgery.github.io/learnableQPD">
+                  Learnable Query Initialization
+                </a>
+              </h4>
+
+              <p align="justify">
+                A study of transformer-based instance segmentation for fine-grained surgical
+                instruments, identifying <b>query initialization</b> as an important limitation
+                and introducing learnable query proposal mechanisms.
+              </p>
+
+              <p>
+                <a href="https://aineurosurgery.github.io/learnableQPD">[Project]</a>
+              </p>
+
+            </div>
+          </div>
+
+
+          <div class="col-sm-6">
+            <div class="research-card">
+
+              <div class="meta">Current Research · Trustworthy AI</div>
+
+              <h4>
+                RELAX: Reliability Enhancement by Limiting Adverse Exertions
+              </h4>
+
+              <p align="justify">
+                A work exploring mechanisms for improving the <b>reliability of AI systems</b>
+                by limiting adverse exertions during model training. The work has been
+                <b>accepted at Nature Scientific Reports</b>.
+              </p>
+
+              <p>
+                <b>Co-authors:</b> Raghunathan Selvam, Prasad Sudhakar Murthy,
+                Rahul Venkataramani, and Chandan Aladahalli.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="research-card">
+
+              <div class="meta">MIDL · Short Paper · Trustworthy AI</div>
+
+              <h4>
+                MIRROR: Multi-model Inference and Regional Reasoning for Recognizing Annotation Errors
+              </h4>
+
+              <p align="justify">
+                A framework exploring <b>multi-model inference and regional reasoning</b> for
+                identifying annotation errors in medical imaging, reflecting my interest in
+                detecting potential sources of unreliability in medical AI pipelines.
+              </p>
+
+              <p>
+                <b>Accepted as a short paper at MIDL.</b>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- ========================================================= -->
+        <!-- PATENTS                                                    -->
+        <!-- ========================================================= -->
+
+        <h3 class="push-down-4"><span>Patent Filings</span></h3>
+
+        <p class="section-lead" align="justify">
+          My recent research also extends toward AI systems that can be configured for a
+          clinical need and actively assist healthcare professionals. The following are
+          <b>US patent filings</b> representing this direction.
         </p>
 
 
-        <h3 class="push-down-4"><span>Research Areas</span></h3>
+        <div class="patent-card">
 
-        <h5>Trustworthy and Explainable AI</h5>
+          <h4>
+            PROMISE: Prompt Oriented Model Instantiation for Specialised Environments
+          </h4>
 
-        <p align="justify">
-          My current research focuses on building <b>reliable, explainable, and trustworthy
-          computer vision systems</b> for healthcare. This includes studying model behaviour,
-          reliability, failure modes, and mechanisms that can provide greater confidence in
-          AI-assisted decision making.
-        </p>
+          <p align="justify">
+            A prompt-driven approach for creating specialized medical imaging models from
+            high-level user requirements such as modality, task, model size, and speed.
+          </p>
 
-        <h5>Neurosurgical Skills Assessment</h5>
-
-        <p align="justify">
-          My doctoral research investigated AI-based evaluation of
-          <b>microsuturing, microdrilling, and endoscopic neurosurgical skills</b>.
-          The objective was to develop automated and objective approaches for assessing
-          surgical performance, reducing dependence on subjective evaluation by experts.
-        </p>
-
-        <h5>Surgical Video Understanding</h5>
-
-        <p align="justify">
-          I worked on <b>temporal action segmentation</b> of surgical videos to identify
-          and localize surgical actions over time. A major focus was learning from scarce
-          annotated data, leading to the development of video-specific augmentation and
-          curriculum-learning strategies.
-        </p>
-
-        <h5>Surgical Instrument Segmentation</h5>
-
-        <p align="justify">
-          Another component of my research focused on <b>surgical instrument instance
-          segmentation and classification</b>. This work investigated the limitations of
-          transformer-based instance segmentation methods for fine-grained surgical
-          instruments and explored improved query initialization and multimodal learning
-          strategies.
-        </p>
-
-        <h5>Medical Imaging and Computer Vision</h5>
-
-        <p align="justify">
-          My broader research experience includes <b>medical image analysis, image
-          segmentation, image classification, image registration, image restoration,
-          deep learning, and computer vision</b>, with applications spanning neurosurgery,
-          radiology, heritage imaging, surveillance video analysis, and other domains.
-        </p>
-
-        <h3 class="push-down-4"><span>Current Research</span></h3>
-
-        <p align="justify">
-          At <b>GE HealthCare</b>, my current research focuses on the reliability and
-          explainability of computer vision models used in healthcare. One of the key
-          directions of this work is understanding how AI systems behave under challenging
-          conditions and developing approaches that can make their predictions more
-          dependable and interpretable.
-        </p>
-
-        <h5>
-          Relax: Reliability Enhancement by Limiting Adverse Exertions
-        </h5>
-
-        <p align="justify">
-          I am recently worked on <b>RELAX</b> (<b>Reliability Enhancement by Limiting
-          Adverse Exertions</b>), a work exploring mechanisms for improving the reliability
-          of AI systems by limiting adverse exertions during model training. The manuscript has been
-          <b>submitted to Nature Scientific Reports</b>.
-          Co-authors include <b>Raghunathan Selvam, Prasad Sudhakar Murthy,
-          Rahul Venkataramani, and Chandan Aladahalli</b>.
-        </p>
-
-        <h5>
-          MIRROR: Multi-model Inference and Regional Reasoning for Recognizing Annotation Errors
-        </h5>
-
-        <p align="justify">
-          <b>MIRROR</b> explores the use of multi-model inference and regional reasoning
-          for identifying annotation errors in medical imaging. The work was accepted as
-          a <b>short paper at the Medical Imaging with Deep Learning (MIDL)</b> conference.
-          It reflects my broader interest in developing AI systems that can reason about
-          their own predictions and identify potential sources of unreliability in medical
-          data and model outputs.
-        </p>
-        
-        <h3 class="push-down-4"><span>Selected Research Contributions</span></h3>
-
-        <p align="justify">
-          My doctoral work resulted in several datasets and AI frameworks addressing
-          different components of automated surgical skills assessment. Three representative
-          projects are highlighted below.
-        </p>
-
-        <h5>
-          <a href="https://aineurosurgery.github.io/microsuturing">
-            Micro-suturing Skills Evaluation
-          </a>
-        </h5>
-
-        <p align="justify">
-          In this work, we developed a <b>multi-task learning framework</b> for evaluating
-          neurosurgical micro-suturing skills from the final surgical outcome. The work
-          addressed the challenges posed by small, long-tailed training datasets and
-          variations in magnification and suture size. We also introduced the first dataset
-          specifically targeting the micro-suturing task and demonstrated that the proposed
-          approach could outperform human experts and existing state-of-the-art methods.
-        </p>
-
-        <h5>
-          <a href="https://aineurosurgery.github.io/VideoCutMix">
-            VideoCutMix: Temporal Segmentation of Surgical Videos in Scarce Data Scenarios
-          </a>
-        </h5>
-
-        <p align="justify">
-          Presented at <b>MICCAI 2024</b>, VideoCutMix introduces a flow-consistent,
-          video-specific augmentation strategy for <b>temporal action segmentation</b>
-          when annotated surgical data are scarce. The method generates pseudo-action
-          boundaries while preserving temporal consistency and is combined with a
-          sample-hardness-inspired curriculum learning strategy. The work also introduced
-          the <b>Neuro-endoscopic Trainee Simulator (NETS) dataset</b> for non-robotic
-          neuroendoscopic action segmentation.
-        </p>
-
-        <h5>
-          <a href="https://aineurosurgery.github.io/learnableQPD">
-            Learnable Query Initialization for Surgical Instrument Instance Segmentation
-          </a>
-        </h5>
-
-        <p align="justify">
-          Presented at <b>MICCAI 2023</b>, this work investigated why transformer-based
-          instance segmentation approaches struggle with fine-grained surgical instruments
-          in low-data settings. We identified incorrect query initialization as a key
-          limitation and proposed a <b>Query Proposal Network (QPN)</b> and a
-          <b>learnable Query Proposal Decoder (QPD)</b> to improve the initialization of
-          instance segmentation queries.
-        </p>
+        </div>
 
 
-        <h3 class="push-down-4"><span>Selected Publications</span></h3>
+        <div class="patent-card">
 
-        <p>
-          A complete and up-to-date list of my publications is available on
-          <a href="https://scholar.google.com/citations?user=ew9VPnAAAAAJ&hl=en">
-            Google Scholar
-          </a>.
-        </p>
+          <h4>
+            A Sweep-Detect-Prescribe Method for Sonographic Guidance
+          </h4>
 
-        <h5>Selected Publications</h5>
+          <p align="justify">
+            An AI-guided ultrasound acquisition framework that identifies high-quality views
+            of a target anatomy and uses them to guide subsequent image acquisition.
+          </p>
 
-        <ul class="publications">
+        </div>
 
-          <li align="justify">
-            Dhanakshirur, Rohan Raju, Tyagi Mrinal, Baby Britty, Suri Ashish, Kalra Prem,
-            and Arora Chetan. "VideoCutMix: Temporal Segmentation of Surgical Videos in
-            Scarce Data Scenarios." In the 27th International Conference on Medical Image
-            Computing and Computer Assisted Intervention (MICCAI), 2024.
-            <a href="https://aineurosurgery.github.io/VideoCutMix">[Project]</a>
-          </li>
 
-          <li align="justify">
-            Dhanakshirur, Rohan Raju, K N Ajay Shastry, Kaustubh Borgavi, Ashish Suri,
-            Prem Kumar Kalra, and Chetan Arora. "Learnable Query Initialization for
-            Surgical Instrument Instance Segmentation." In the 26th International Conference
-            on Medical Image Computing and Computer Assisted Intervention (MICCAI), 2023.
-            <a href="https://aineurosurgery.github.io/learnableQPD">[Project]</a>
-          </li>
+        <!-- ========================================================= -->
+        <!-- RESEARCH IMPACT / THROUGH-LINE                            -->
+        <!-- ========================================================= -->
 
-          <li align="justify">
-            Dhanakshirur, Rohan Raju, Varidh Katiyar, Ravi Sharma, Ashish Suri,
-            Prem Kumar Kalra, and Chetan Arora. "From Feline Classification to Skills
-            Evaluation: A Multitask Learning Framework for Evaluating Micro Suturing
-            Neurosurgical Skills." In 2023 IEEE International Conference on Image Processing
-            (ICIP), pp. 3374-3378. IEEE, 2023.
-            <a href="https://aineurosurgery.github.io/microsuturing">[Project]</a>
-          </li>
+        <h3 class="push-down-4"><span>Research Through-Line</span></h3>
 
-          <li align="justify">
-            Siddharth B Joshi, Rajeev Sharma, Niveditha Manjunath, Rohan Raju Dhanakshirur,
-            VL Ganesh, Savyasachi Jain, Amol Raheja, Leve Joseph Devrajan, Ashima Nehra,
-            and Ashish Suri. "Functional and neuropsychological outcome following surgical
-            treatment of Moya Moya disease." World Neurosurgery (2024).
-          </li>
+        <div class="research-highlight">
 
-          <li align="justify">
-            Manjunath Niveditha, Rohan Raju Dhanakshirur, Siddharth Joshi, Nikhila Gunna Reddy,
-            Amol Raheja, Leve Joseph Devrajan Sebastian, Ajay Garg, Prem Kumar Kalra, and
-            Ashish Suri. "Novel Method of Calculation of Magnetic Resonance Imaging Perfusion
-            and Comparison of Single versus Double Barrel Superficial Temporal Artery-Middle
-            Cerebral Artery Bypass for Revascularisation in Moya Moya Disease."
-            World Neurosurgery 181 (2024): e516-e523.
-          </li>
+          <p align="justify">
+            Across these projects, my research has progressively moved through several levels
+            of AI capability:
+          </p>
 
-          <li align="justify">
-            Gupta Amit, Rohan Raju Dhanakshirur, Kshitiz Jain, Sanil Garg, Neel Yadav,
-            Amlesh Seth, and Chandan J. Das. "Deep Learning for Detecting and Subtyping
-            Renal Cell Carcinoma on Contrast-Enhanced CT Scans Using 2D Neural Network
-            with Feature Consistency Techniques." Indian Journal of Radiology and Imaging,
-            2024.
-          </li>
+          <ul>
+            <li>
+              <b>Understanding visual data</b> through computer vision and medical image analysis.
+            </li>
 
-          <li align="justify">
-            Gupta Amit, Sanil Garg, Neel Yadav, Rohan Raju Dhanakshirur, Kshitiz Jain,
-            Rishi Nayyar, Seema Kaushal, and Chandan J. Das. "Predicting Renal Cell Carcinoma
-            Subtypes and Fuhrman Grading Using Multiphasic CT-Based Texture Analysis and
-            Machine Learning Techniques." Indian Journal of Radiology and Imaging, 2024.
-          </li>
+            <li>
+              <b>Understanding surgical activity</b> through video understanding and
+              instrument segmentation.
+            </li>
 
-          <li align="justify">
-            Rangarajan, Krithika, Pranjal Aggarwal, Dhruv Kumar Gupta, Rohan Dhanakshirur,
-            Akhil Baby, Chandan Pal, Arun Kumar Gupta, Smriti Hari, Subhashis Banerjee,
-            and Chetan Arora. "Deep learning for detection of iso-dense, obscure masses
-            in mammographically dense breasts." European Radiology (2023): 1-10.
-          </li>
+            <li>
+              <b>Understanding human performance</b> through automated surgical skill assessment.
+            </li>
 
-          <li align="justify">
-            Bhalla, Deeksha, Anupama Ramachandran, Krithika Rangarajan, Rohan Dhanakshirur,
-            Subhashis Banerjee, and Chetan Arora. "Basic principles of AI simplified for a
-            Medical Practitioner: Pearls and Pitfalls in Evaluating AI algorithms."
-            Current Problems in Diagnostic Radiology 52, no. 1 (2023): 47-55.
-          </li>
+            <li>
+              <b>Translating AI research into clinical tools</b> for surgical education and
+              training.
+            </li>
 
-          <li align="justify">
-            Tabib, Ramesh Ashok, Sujaykumar Kulkarni, Abhay Kagalkar, Vaishnavi Hurakadli,
-            Abhijeet Ganapule, Rohan Raju Dhanakshirur, and Uma Mudenagudi.
-            "Deep learning-based filtering of images for 3d reconstruction of heritage sites."
-            Digital Techniques for Heritage Presentation and Preservation (2021): 147-156.
-          </li>
+            <li>
+              <b>Understanding and improving AI reliability</b> through trustworthy and
+              explainable AI research.
+            </li>
 
-          <li align="justify">
-            Baby, Britty, Ramandeep Singh, Ashish Suri, Rohan Raju Dhanakshirur,
-            Argha Chakraborty, Subodh Kumar, Prem Kumar Kalra, and Subhashis Banerjee.
-            "A review of virtual reality simulators for neuroendoscopy."
-            Neurosurgical Review 43 (2020): 1255-1272.
-          </li>
+            <li>
+              <b>Moving toward interactive medical AI</b> that can be adapted to clinical
+              requirements and actively assist clinicians.
+            </li>
+          </ul>
 
-          <li align="justify">
-            Patil, Ujwala, Ramesh Ashok Tabib, Rohan Raju Dhanakshirur, and Uma Mudenagudi.
-            "Evidence-based image registration and its effect on image fusion."
-            In Smart Computing Paradigms: New Progresses and Challenges: Proceedings of
-            ICACNI 2018, Volume 1, pp. 29-39. Springer Singapore, 2020.
-          </li>
+          <p align="justify" style="margin-top: 20px;">
+            Ultimately, I am interested in building AI systems that do more than achieve
+            strong benchmark performance—systems that can <b>understand complex clinical
+            visual information, communicate their limitations, adapt to real-world needs,
+            and earn the trust required for healthcare applications.</b>
+          </p>
 
-          <li align="justify">
-            Dhanakshirur, Rohan Raju, Ramesh Ashok Tabib, Ujwala Patil, and Uma Mudenagudi.
-            "Evidence based feature selection and collaborative representation towards
-            learning based PSF estimation for motion deblurring."
-            In 2019 IEEE/CVF International Conference on Computer Vision Workshop (ICCVW),
-            pp. 1008-1016. IEEE, 2019.
-          </li>
+        </div>
 
-          <li align="justify">
-            Kunchur, Pavan, Rohan Raju Dhanakshirur, Sameer Ambekar, and Sadhana Bangarashetti.
-            "A Framework for image selection for image fusion using crowdsourced data."
-            In 2019 1st International Conference on Advances in Information Technology
-            (ICAIT), pp. 167-173. IEEE, 2019.
-          </li>
 
-          <li align="justify">
-            Rohan, Raju Dhanakshirur, Zeba ara Patel, Smita C. Yadavannavar, C. Sujata,
-            and Uma Mudengudi. "Image Segmentation and Geometric Feature Based Approach
-            for Fast Video Summarization of Surveillance Videos."
-            In Computer Vision Applications: Third Workshop, WCVA 2018, Held in Conjunction
-            with ICVGIP 2018, Hyderabad, India, December 18, 2018, Revised Selected Papers 3,
-            pp. 79-88. Springer Singapore, 2019.
-          </li>
+        <!-- ========================================================= -->
+        <!-- PUBLICATIONS                                               -->
+        <!-- ========================================================= -->
 
-          <li align="justify">
-            Dhanakshirur, Rohan Raju, Preeti Pillai, Ramesh Ashok Tabib, Ujwala Patil,
-            and Uma Mudenagudi. "A framework for lane prediction on unstructured roads."
-            In Advances in Signal Processing and Intelligent Recognition Systems:
-            4th International Symposium SIRS 2018, Bangalore, India, September 19–22, 2018,
-            Revised Selected Papers 4, pp. 178-189. Springer Singapore, 2019.
-          </li>
+        <div class="publication-section">
 
-        </ul>
+          <h3 class="push-down-4"><span>Selected Publications</span></h3>
+
+          <p>
+            A complete and up-to-date list of my publications is available on
+            <a href="https://scholar.google.com/citations?user=ew9VPnAAAAAJ&hl=en">
+              Google Scholar
+            </a>.
+          </p>
+
+          <ul class="publications">
+
+            <li align="justify">
+              Dhanakshirur, Rohan Raju, Tyagi Mrinal, Baby Britty, Suri Ashish, Kalra Prem,
+              and Arora Chetan. "VideoCutMix: Temporal Segmentation of Surgical Videos in
+              Scarce Data Scenarios." In the 27th International Conference on Medical Image
+              Computing and Computer Assisted Intervention (MICCAI), 2024.
+              <a href="https://aineurosurgery.github.io/VideoCutMix">[Project]</a>
+            </li>
+
+            <li align="justify">
+              Dhanakshirur, Rohan Raju, K N Ajay Shastry, Kaustubh Borgavi, Ashish Suri,
+              Prem Kumar Kalra, and Chetan Arora. "Learnable Query Initialization for
+              Surgical Instrument Instance Segmentation." In the 26th International Conference
+              on Medical Image Computing and Computer Assisted Intervention (MICCAI), 2023.
+              <a href="https://aineurosurgery.github.io/learnableQPD">[Project]</a>
+            </li>
+
+            <li align="justify">
+              Dhanakshirur, Rohan Raju, Varidh Katiyar, Ravi Sharma, Ashish Suri,
+              Prem Kumar Kalra, and Chetan Arora. "From Feline Classification to Skills
+              Evaluation: A Multitask Learning Framework for Evaluating Micro Suturing
+              Neurosurgical Skills." In 2023 IEEE International Conference on Image Processing
+              (ICIP), pp. 3374-3378. IEEE, 2023.
+              <a href="https://aineurosurgery.github.io/microsuturing">[Project]</a>
+            </li>
+
+            <li align="justify">
+              Siddharth B Joshi, Rajeev Sharma, Niveditha Manjunath, Rohan Raju Dhanakshirur,
+              VL Ganesh, Savyasachi Jain, Amol Raheja, Leve Joseph Devrajan, Ashima Nehra,
+              and Ashish Suri. "Functional and neuropsychological outcome following surgical
+              treatment of Moya Moya disease." World Neurosurgery (2024).
+            </li>
+
+            <li align="justify">
+              Manjunath Niveditha, Rohan Raju Dhanakshirur, Siddharth Joshi, Nikhila Gunna Reddy,
+              Amol Raheja, Leve Joseph Devrajan Sebastian, Ajay Garg, Prem Kumar Kalra, and
+              Ashish Suri. "Novel Method of Calculation of Magnetic Resonance Imaging Perfusion
+              and Comparison of Single versus Double Barrel Superficial Temporal Artery-Middle
+              Cerebral Artery Bypass for Revascularisation in Moya Moya Disease."
+              World Neurosurgery 181 (2024): e516-e523.
+            </li>
+
+            <li align="justify">
+              Gupta Amit, Rohan Raju Dhanakshirur, Kshitiz Jain, Sanil Garg, Neel Yadav,
+              Amlesh Seth, and Chandan J. Das. "Deep Learning for Detecting and Subtyping
+              Renal Cell Carcinoma on Contrast-Enhanced CT Scans Using 2D Neural Network
+              with Feature Consistency Techniques." Indian Journal of Radiology and Imaging,
+              2024.
+            </li>
+
+            <li align="justify">
+              Gupta Amit, Sanil Garg, Neel Yadav, Rohan Raju Dhanakshirur, Kshitiz Jain,
+              Rishi Nayyar, Seema Kaushal, and Chandan J. Das. "Predicting Renal Cell Carcinoma
+              Subtypes and Fuhrman Grading Using Multiphasic CT-Based Texture Analysis and
+              Machine Learning Techniques." Indian Journal of Radiology and Imaging, 2024.
+            </li>
+
+            <li align="justify">
+              Rangarajan, Krithika, Pranjal Aggarwal, Dhruv Kumar Gupta, Rohan Dhanakshirur,
+              Akhil Baby, Chandan Pal, Arun Kumar Gupta, Smriti Hari, Subhashis Banerjee,
+              and Chetan Arora. "Deep learning for detection of iso-dense, obscure masses
+              in mammographically dense breasts." European Radiology (2023): 1-10.
+            </li>
+
+            <li align="justify">
+              Bhalla, Deeksha, Anupama Ramachandran, Krithika Rangarajan, Rohan Dhanakshirur,
+              Subhashis Banerjee, and Chetan Arora. "Basic principles of AI simplified for a
+              Medical Practitioner: Pearls and Pitfalls in Evaluating AI algorithms."
+              Current Problems in Diagnostic Radiology 52, no. 1 (2023): 47-55.
+            </li>
+
+            <li align="justify">
+              Tabib, Ramesh Ashok, Sujaykumar Kulkarni, Abhay Kagalkar, Vaishnavi Hurakadli,
+              Abhijeet Ganapule, Rohan Raju Dhanakshirur, and Uma Mudenagudi.
+              "Deep learning-based filtering of images for 3d reconstruction of heritage sites."
+              Digital Techniques for Heritage Presentation and Preservation (2021): 147-156.
+            </li>
+
+            <li align="justify">
+              Baby, Britty, Ramandeep Singh, Ashish Suri, Rohan Raju Dhanakshirur,
+              Argha Chakraborty, Subodh Kumar, Prem Kumar Kalra, and Subhashis Banerjee.
+              "A review of virtual reality simulators for neuroendoscopy."
+              Neurosurgical Review 43 (2020): 1255-1272.
+            </li>
+
+            <li align="justify">
+              Patil, Ujwala, Ramesh Ashok Tabib, Rohan Raju Dhanakshirur, and Uma Mudenagudi.
+              "Evidence-based image registration and its effect on image fusion."
+              In Smart Computing Paradigms: New Progresses and Challenges: Proceedings of
+              ICACNI 2018, Volume 1, pp. 29-39. Springer Singapore, 2020.
+            </li>
+
+            <li align="justify">
+              Dhanakshirur, Rohan Raju, Ramesh Ashok Tabib, Ujwala Patil, and Uma Mudenagudi.
+              "Evidence based feature selection and collaborative representation towards
+              learning based PSF estimation for motion deblurring."
+              In 2019 IEEE/CVF International Conference on Computer Vision Workshop (ICCVW),
+              pp. 1008-1016. IEEE, 2019.
+            </li>
+
+            <li align="justify">
+              Kunchur, Pavan, Rohan Raju Dhanakshirur, Sameer Ambekar, and Sadhana Bangarashetti.
+              "A Framework for image selection for image fusion using crowdsourced data."
+              In 2019 1st International Conference on Advances in Information Technology
+              (ICAIT), pp. 167-173. IEEE, 2019.
+            </li>
+
+            <li align="justify">
+              Rohan, Raju Dhanakshirur, Zeba ara Patel, Smita C. Yadavannavar, C. Sujata,
+              and Uma Mudengudi. "Image Segmentation and Geometric Feature Based Approach
+              for Fast Video Summarization of Surveillance Videos."
+              In Computer Vision Applications: Third Workshop, WCVA 2018, Held in Conjunction
+              with ICVGIP 2018, Hyderabad, India, December 18, 2018, Revised Selected Papers 3,
+              pp. 79-88. Springer Singapore, 2019.
+            </li>
+
+            <li align="justify">
+              Dhanakshirur, Rohan Raju, Preeti Pillai, Ramesh Ashok Tabib, Ujwala Patil,
+              and Uma Mudenagudi. "A framework for lane prediction on unstructured roads."
+              In Advances in Signal Processing and Intelligent Recognition Systems:
+              4th International Symposium SIRS 2018, Bangalore, India, September 19–22, 2018,
+              Revised Selected Papers 4, pp. 178-189. Springer Singapore, 2019.
+            </li>
+
+          </ul>
+
+        </div>
 
       </div>
     </div>
@@ -390,11 +834,12 @@
 
   <!-- Bootstrap JS Library -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-    integrity="sha384-aJ21JrTppU8Y5bApTppSuUkhZXN0VxHd"
+    integrity="sha384-aJ21JrTppU8Y5bApTppSuUkhZXEN0VxHd"
     crossorigin="anonymous"></script>
 
   <!-- html file include script | used for navbar and footer -->
   <script src="js/w3data.js"></script>
+
   <script>
     w3IncludeHTML()
   </script>
@@ -406,11 +851,10 @@
     $(document).ready(function() {
 
       $("#navbar-include").load("navbar.html", function() {
-
         $("#home").removeClass("active");
         $("#research").addClass("active");
-
       });
+
     });
   </script>
 
