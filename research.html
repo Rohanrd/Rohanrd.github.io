@@ -240,8 +240,8 @@
 
           <p align="justify">
             My path to this question started in <b>computer vision and image analysis</b> more
-            broadly — image restoration, registration, segmentation, fusion, video analysis, and
-            deep learning. During my PhD at the <b>Indian Institute of Technology Delhi</b>, that
+            broadly. Problems such as image restoration, registration, segmentation, fusion, video analysis, and
+            deep learning shaped my early day research interests. During my PhD at the <b>Indian Institute of Technology Delhi</b>, that
             foundation sharpened into a specific focus: <b>AI for neurosurgical skill
             assessment</b>. I built datasets, computer vision methods, and learning frameworks
             to understand what happens during surgery and to objectively evaluate how well it
@@ -250,7 +250,7 @@
 
           <p align="justify">
             Today, as a <b>Senior AI Scientist at GE HealthCare</b>, that question has evolved
-            again — toward <b>trustworthy and explainable computer vision AI</b>. My work now
+            again. It now focusses on <b>trustworthy and explainable computer vision AI for healthcare</b>. My work now
             centers on understanding model behavior, tracing the sources of unreliability, and
             building approaches that make AI systems more dependable and interpretable in
             healthcare.
@@ -274,7 +274,7 @@
         <h3 class="push-down-4"><span>Research Journey</span></h3>
 
         <p class="section-lead" align="justify">
-          I don't think of these as separate projects so much as one progression — through
+          I don't think of these as separate projects so much as one progression. Through
           increasingly difficult forms of visual understanding, toward increasingly consequential
           healthcare applications.
         </p>
@@ -311,32 +311,36 @@
             <h4>AI for Surgical Skill Assessment</h4>
 
             <p align="justify">
-              My PhD centered on one problem: <b>automated, objective assessment of
-              neurosurgical skill</b>. The goal was to replace subjective evaluation with AI
-              systems that could understand what was happening during surgery and quantify how
-              well it was done — which meant tackling it from both ends.
+              My PhD, <i>"Advancing Automation in Microscopic and Endoscopic Neurosurgical Skills
+              Assessment,"</i> tackled a problem of training and evaluating neurosurgeons outside the operating room. 
+              As training moved from operating rooms to simulation labs for safety and legal reasons,
+              <b>skill evaluation stayed manual</b> slow, inconsistent, and dependent on expert
+              availability. My work built automated evaluation methods to close that gap, for both
+              microscopic and endoscopic procedures.
             </p>
-
+            
             <p align="justify">
-              One thread taught AI to understand <b>what is actually happening during a
-              procedure</b>, through temporal action segmentation of neuroendoscopic video and
-              instance segmentation of surgical instruments — under conditions that are typical
-              in medicine but punishing for most vision models: <b>scarce annotated data,
-              fine-grained visual structures, and high temporal variability</b>. That led to new
-              methods in video augmentation, curriculum learning, and query initialization for
-              transformer-based instance segmentation.
+              For <b>micro-suturing</b>, I built a multi-task learning model that predicts both an
+              overall score and five detailed sub-scores, improving on prior methods by over 30%. For
+              <b>micro-drilling</b>, where labeled data is scarce, I reframed evaluation as a rank
+              estimation problem using geometric order learning, outperforming standard classification
+              and regression approaches. For <b>endoscopic skills</b>, I designed a two-stage pipeline —
+              temporal action segmentation followed by per-action evaluation — supported by a new
+              video augmentation strategy and a multimodal contrastive pretraining framework that
+              learns from textual skill descriptions, both aimed at getting reliable results out of
+              limited data.
             </p>
-
+            
             <p align="justify">
-              The other thread asked the question that actually matters to a trainee:
-              <b>how well am I performing?</b> That produced automated assessment methods for
-              <b>microsuturing, microdrilling, and endoscopic neurosurgical skills</b>, built on
-              purpose-made datasets and AI frameworks. Its clearest outcome was
-              <b>NeuroMentor</b>, an AI-based system for surgical skills evaluation and training
-              that brings objective assessment directly into surgical education — and the
-              experience that shaped a core piece of my research philosophy: algorithmic
-              advances matter most when they end up as tools that solve real problems for
-              clinicians and trainees, not just results in a paper.
+              To connect this work back to real surgery, I also improved surgical instrument instance
+              segmentation with a Query Proposal Network using deformable attention, boosting query
+              recall by nearly 45%. Alongside the algorithms, the thesis contributed <b>four large-scale
+              annotated datasets</b> — including the largest open-access micro-suturing dataset and the
+              first temporal action dataset for non-robotic neuro-endoscopy — and validated the full
+              system in real-world deployment, where automated scores closely tracked expert judgment
+              and were well received by users. The clearest applied outcome of this work is
+              <b>NeuroMentor</b>, an AI-based system that brings this kind of objective assessment
+              directly into surgical education.
             </p>
 
           </div>
